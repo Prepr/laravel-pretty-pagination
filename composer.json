@@ -1,0 +1,61 @@
+{
+    "name": "prepr/laravel-pretty-pagination",
+    "description": "Laravel SEO friendly pagination routing.",
+    "keywords": [
+        "prepr",
+        "laravel-pretty-pagination",
+        "SEO",
+        "laravel",
+        "pagination",
+        "routing"
+    ],
+    "homepage": "https://github.com/prepr/laravel-pretty-pagination",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hemarao Dugana",
+            "email": "hemarao@prepr.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/contracts": "5.8.*|^6|^7|^8",
+        "illuminate/routing": "5.8.*|^6|^7|^8",
+        "illuminate/translation": "5.8.*|^6|^7|^8",
+        "illuminate/pagination": "5.8.*|^6|^7|^8",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prepr\\PaginateRoute\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Prepr\\PaginateRoute\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Prepr\\PaginateRoute\\PaginateRouteServiceProvider"
+            ],
+            "aliases": {
+                "PaginateRoute": "Prepr\\PaginateRoute\\PaginateRouteFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
